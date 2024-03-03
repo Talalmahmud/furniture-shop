@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import SubHero from "./components/SubHero";
 import ProductCard from "./components/ProductCard";
 import AdvertiseSection from "./components/AdvertiseSection";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -22,9 +23,12 @@ export default function Home() {
         <ProductCard />
       </div>
       <div className="flex flex-col justify-center items-center py-[16px]">
-        <span className=" text-[14px] underline cursor-pointer  text-red-500">
-          See more
-        </span>
+        <Link href={"/products"}>
+          {" "}
+          <span className=" text-[14px] underline cursor-pointer  text-red-500">
+            See more
+          </span>
+        </Link>
       </div>
       <AdvertiseSection />
 
