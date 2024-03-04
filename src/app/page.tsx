@@ -43,9 +43,12 @@ export default function Home() {
         <ProductCard />
       </div>
       <div className="flex flex-col justify-center items-center py-[16px]">
-        <span className=" text-[14px] underline cursor-pointer  text-red-500">
-          See more
-        </span>
+        <Link href={"/products"}>
+          {" "}
+          <span className=" text-[14px] underline cursor-pointer  text-red-500">
+            See more
+          </span>
+        </Link>
       </div>
     </main>
   );
