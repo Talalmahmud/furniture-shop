@@ -6,7 +6,7 @@ type Props = {};
 const SubHero = (props: Props) => {
   return (
     <div className=" flex w-[1100px] mx-auto items-center justify-between">
-      <div className=" w-[518px] flex items-center justify-center h-[340px] bg-blue-800">
+      <div className=" w-[518px] flex items-center justify-center h-[340px] bg-blue-500">
         <div className=" flex items-center justify-between">
           <div className=" flex flex-col gap-[32px] w-[300px]">
             <p>Shop your items. </p>
@@ -25,7 +25,7 @@ const SubHero = (props: Props) => {
           </div>
         </div>
       </div>
-      <div className=" w-[518px] flex items-center justify-center h-[340px] bg-blue-800">
+      <div className=" w-[518px] flex items-center justify-center h-[340px] bg-blue-500">
         <div className=" flex items-center justify-between">
           <div className=" flex flex-col gap-[32px] w-[300px]">
             <p>Shop your items. </p>

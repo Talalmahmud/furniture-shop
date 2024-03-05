@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import ProductCard from "../components/ProductCard";
 import { Box, Slider } from "@mui/material";
+import Image from "next/image";
 function valuetext(value: number) {
   return `${value}`;
 }
@@ -102,6 +103,26 @@ export default function page({}: Props) {
             <ProductCard /> <ProductCard /> <ProductCard />
             <ProductCard /> <ProductCard /> <ProductCard />
             <ProductCard />
+          </div>
+          <div className=" w-full flex justify-center items-center">
+            <div className=" w-[300px] flex items-center justify-center gap-x-[8px]">
+              <div className=" h-[16px] w-[16px] relative overflow-auto cursor-pointer hover:bg-black/10  ">
+                <Image src={"/icons/left-arrow.svg"} fill alt="" />
+              </div>
+              <button className=" w-[24px] h-[24px] text-[14px] rounded-full hover:bg-black hover:text-white bg-slate-300 flex items-center justify-center ">
+                1
+              </button>
+              <button className=" w-[24px] h-[24px] text-[14px] rounded-full hover:bg-black hover:text-white bg-slate-300 flex items-center justify-center ">
+                2
+              </button>
+              <button className=" w-[24px] h-[24px] text-[14px] rounded-full hover:bg-black hover:text-white bg-slate-300 flex items-center justify-center ">
+                3
+              </button>
+
+              <div className=" h-[16px] w-[16px] relative overflow-auto cursor-pointer hover:bg-black/10 ">
+                <Image src={"/icons/right-arrow.svg"} fill alt="" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
