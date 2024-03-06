@@ -6,6 +6,7 @@ import AdvertiseSection from "./components/AdvertiseSection";
 import Link from "next/link";
 
 export default function Home() {
+
   return (
     <main className=" ">
       <Hero />

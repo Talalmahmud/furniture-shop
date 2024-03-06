@@ -1,5 +1,7 @@
+"use client";
+import axios from "axios";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 type Props = {};
 
