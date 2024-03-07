@@ -16,6 +16,7 @@ const ProductCard = (props: Props) => {
             fill
             alt="img"
             loading="lazy"
+            className=" hover:scale-110 transition-all duration-500 "
           />
         </div>
         <div className=" text-[16px] flex items-center justify-between">
